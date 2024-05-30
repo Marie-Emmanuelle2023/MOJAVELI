@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/*Début de la stylisation de la section d'Accueil*/
+.accueil {
+  background-image: url('images/background/1\ \(1\).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navbar {
+    background-color: rgba(82, 67, 64, 0.6);
+    color: #fff;
+    height: 85px;
+    width: 100%;
+    position: sticky;
+    z-index: 999;
+    font-family: Dehuti, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar li {
+    display: inline;
+    margin: 20px;
+    list-style-type: none;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    font-family: 'Bloody', sans-serif;
+    font-size: 45px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.title {
+    transform: translate(80px, 220px);
+}
+
+.title h1 {
+    font-family: 'bloody', sans-serif;
+    font-size: 150px;
+    color: #fff;
+}
+
+.title h2 {
+    font-family: 'cooldex', serif;
+    color: rgb(207, 113, 78);
+    font-size: 85px;
+    margin-left: 195px;
+}
+
+.box-rebours {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translate(-430px, 212px);
+}
+
+.box_jour,
+.box_heure,
+.box_minute,
+.box_seconde {
+    padding: 10px;
+}
+
+#jour,
+#heure,
+#minute,
+#seconde {
+    background: black;
+    padding: 10px 20px;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#jour_label,
+#heure_label,
+#minute_label,
+#seconde_label {
+    font-size: 1.5rem;
+}
+
+.billetterie {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(505px, 290px);
+    position: absolute;
+    margin: 575px;
+    border-radius: 50%;
+    animation-name: levitate;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes levitate {
+    from {
+        transform: translate(-50%, -50%);
+    }
+
+    to {
+        transform: translate(-50%, -60%);
+    }
+}
+
+/*Fin de la stylisation de la section d'Accueil*/
+
+/*Début de la stylisation de la section d'Actualités*/
+.news {
+    background-color: #2a2a2b;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.slider {
+    overflow: hidden;
+    width: 85vw;
+    height: 100vh;
+    position: relative;
+    transform: translate(100px, 80px);
+}
+
+.slider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slider 15s infinite;
+}
+
+.slider .slide:nth-child(1) {
+    background-image: url("images/1\ \(4\).png");
+    animation-delay: 0s;
+}
+
+.slider .slide:nth-child(2) {
+    background-image: url("images/kingofrapp.jpg");
+    animation-delay: 5s;
+}
+
+
+@keyframes slider {
+
+    0%,
+    3%,
+    100% {
+        transform: translateX(0);
+        animation-timing-function: ease;
+    }
+
+    20% {
+        transform: translateX(-100%);
+        animation-timing-function: step-end;
+    }
+
+    83% {
+        transform: translateX(100%);
+        animation-timing-function: ease;
+    }
+}
+
+/*Fin de la stylisation de la section d'Actualités*/
+
+/*Début de la stylisation de la section que je sais pas si je peux faire*/
+.funnyexperience {
+    background-color: #2a2a2b;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.titre h1 {
+    font-family: Dehuti, sans-serif;
+    transform: translate(650px, 40px);
+}
+
+.titre h3 {
+    font-family: cooldex, sans-serif;
+    color: #c57554;
+    transform: translate(695px, 40px);
+}
+
+.funnyexperience label {
+    font-family: Dehuti, sans-serif;
+    color: #fff;
+}
+
+.funnyexperience input {
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+.funnyexperience textarea {
+    width: 530px;
+    border-radius: 50px;
+
+}
+
+.envoyer {
+
+    transform: translate(1005px, 420px);
+}
+
+
+
+
+/*Fin de la stylisation de la section que je sais pas si je peux faire*/
+
+/*Début de la stylisation de la section qui contient le footer*/
+.footer {
+    background-color: #2a2a2b;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socials {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateX(-90px);
+}
+
+.social {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.copyright {
+    transform: translateX(50px);
+}
+
+/*Fin de la stylisation de la section qui contient le footer*/
+
+
+/* Le responsive*/

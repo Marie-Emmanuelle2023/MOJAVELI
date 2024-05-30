@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viens voir le Mojavel en concert</title>
+    <link rel="stylesheet" href="billetterie.css">
+</head>
+
+<body>
+
+    <section class="billetterie">
+        <div class="title">
+            <h1> BILLETERIE</h1>
+            <h3>DIDI B</h3>
+        </div>
+
+        <div style="transform: translate(20px, 100px);">
+            <!--Conception du premier ticket-->
+
+            <div class="ticket">
+                <div class="icon">
+                    <img src="images/ticket.png" width="150" height="150" alt="">
+                </div>
+                <div class="text">
+                    <h1>PASS NORMAL</h1>
+                    <p>Ce pass vous donne l'accès au concert dans la foule</p>
+                    <h2>10000 FCFA</h2>
+                </div>
+
+                <button class="achat" onclick="envoyer()">
+                    <a href="#">ACHETER</a>
+                </button>
+
+            </div>
+
+            <!--Fin-->
+
+            <hr
+                style="height: 1px; width: 730px;background-color: white;border-radius: 50px;transform: translate(50px,43px);">
+            <!--Conception du deuxième ticket-->
+
+            <div class="ticket">
+                <div class="icon">
+                    <img src="images/ticket.png" width="150" height="150" alt="">
+                </div>
+                <div class="text">
+                    <h1>PASS VIP</h1>
+                    <p>Ce pass vous donne à des places plus avancées et des séances photos</p>
+                    <h2>20000 FCFA</h2>
+                </div>
+
+                <button class="achat" onclick="envoyer()">
+                    <a href="#">ACHETER</a>
+                </button>
+
+            </div>
+
+            <!--Fin-->
+        </div>
+    </section>
+
+    <script>
+        function envoyer() {
+            prompt("Entrez votre adresse Email")
+            alert("Vous y recevrez toutes les informations necessaires par rapport au paiement")
+        }
+    </script>
+</body>
+
+</html>

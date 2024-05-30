@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mojaveli Accueil</title>
+    <link rel="stylesheet" href="accueil.css">
+</head>
+
+<body>
+    <!--Début de la page d'accueil qui s'affiche au chargement de la page-->
+    <section class="accueil">
+
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> DIDI B</a>
+            </div>
+            <nav>
+                <ul>
+                    <a href="index.html">
+                        <li>ACCUEIL</li>
+                    </a>
+                    <a href="artiste.html">
+                        <li>ARTISTE</li>
+                    </a>
+                    <a href="discographie.html">
+                        <li>DISCOGRAPHIE</li>
+                    </a>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="title">
+            <h1>MOJAVELI</h1>
+            <h2>DIDI B</h2>
+
+        </div>
+
+        <!--Compte à rebours-->
+        <div class="box-rebours">
+            <div class="box_jour">
+                <div id="jour">00</div>
+                <span id="jour_label">Jours</span>
+            </div>
+            <div class="box_heure">
+                <div id="heure">00</div>
+                <span id="heure_label">Heures</span>
+            </div>
+            <div class="box_minute">
+                <div id="minute">00</div>
+                <span id="minute_label">Minutes</span>
+            </div>
+            <div class="box_seconde">
+                <div id="seconde">00</div>
+                <span id="seconde_label">Secondes</span>
+            </div>
+        </div>
+        <!--Fin du compte à rebours-->
+
+        <div class="billetterie">
+            <a href="billetterie.html" target="_blank">
+                <img src="images/tickets.png" width="40" height="40">
+            </a>
+        </div>
+    </section>
+    <!--Fin de la page d'accueil qui s'affiche au chargement de la page-->
+
+    <!--Début de la deuxième section de la page d'accueil qui contient les actualités-->
+    <section class="news">
+
+        <div class="slider">
+            <div class="slide"></div>
+            <div class="slide"></div>
+
+        </div>
+
+    </section>
+    <!--Fin de la deuxième section de la page d'accueil qui contient les actualités-->
+    <hr>
+
+    <!--Début de la troisième section un peu fun où on est sensé retrouver les cuts des concerts qui sont passés et autres vidéos qui s'est finalement transformé en formulaire -->
+    <section class="funnyexperience">
+        <div class="titre">
+            <h1>CONTACT</h1>
+            <h3>DIDI B</h3>
+        </div>
+        <div style="display: flex;justify-content: center;transform: translate(10px, 155px);">
+            <label for="Nom" style="transform: translate(90px, -30px);">
+                VOTRE NOM
+            </label>
+            <input type="text" style="width: 250px;">
+
+            <label for="Mail" style="transform: translate(202px, -30px);">
+                VOTRE ADRESSE EMAIL
+            </label>
+            <input type="text" style="width: 250px;">
+        </div>
+
+        <div style="display: flex;justify-content: center;transform: translate(-30px, 260px);">
+            <label for="Sujet" style="transform: translate(90px, -30px);">
+                LE SUJET
+            </label>
+            <input type="text" style="width: 430px;">
+        </div>
+
+        <div style="display: flex;justify-content: center;    transform: translate(10px, 340px);">
+            <label for="Message" style="transform: translate(172px, -30px);">
+                VOTRE MESSAGE
+            </label>
+            <textarea name="" id="" cols="5" rows="10" style="resize: none;"></textarea>
+        </div>
+        <div class="envoyer" onclick="envoyer()">
+            <input type="button"  value="ENVOYER"
+                style=" font-family: Dehuti,sans-serif;border: 5px solid #707072;border-radius: 50px;width: 200px;height: 50px;color: white;background-color: #2a2a2c;">
+        </div>
+    </section>
+    <!--On sait pas si je vais réussir ça mais on verra-->
+    <!--Du coup fin de la troisième section un peu fun qui est sensée diffuser des vidéos des anciens concerts et les vidéos un peu fun de l'artiste-->
+    <hr>
+    <!--Début de la quatrième section de la page d'accueil entière qui est le footer-->
+    <section class="footer">
+        <div class="socials">
+
+            <div class="social">
+                <a href="https://www.facebook.com/DidiBkiffnobeat/">
+                    <img src="images/facebook.png" width="40" height="40" alt="">
+                </a>
+            </div>
+            <div class="social">
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FDidibofficial">
+                    <img src="images/twitter (1).png" width="40" height="40" alt="">
+                </a>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com/didibofficial/">
+                    <img src="images/instagram.png" width="40" height="40" alt="">
+                </a>
+            </div>
+            <div class="social">
+                <a href="https://open.spotify.com/intl-fr/artist/2FwWGogJ04HZdALWeMxZA4">
+                    <img src="images/spotify.png" width="40" height="40" alt="">
+                </a>
+            </div>
+            <div class="social">
+                <a href="https://www.youtube.com/@DidiBKiffnobeatTV">
+                    <img src="images/youtube (1).png" width="40" height="40" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            &copy;2023 DIDI B. TOUS LES DROITS SONT RÉSERVÉS
+        </div>
+
+        <div style="transform: translateX(60px);">
+            Dévéloppé par RMN Arts
+        </div>
+    </section>
+    <!--Fin de la deuxième section de la quatrième section de la page d'accueil entière qui est le footer-->
+    <script>
+    function envoyer()
+{
+    alert("Merci de nous avoir contacté nous vous répondrons au plus vite")
+}
+</script>
+
+</body>
+<script src="accueil.js"></script>
+
+</html>

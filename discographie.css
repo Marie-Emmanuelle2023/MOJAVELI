@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+
+/*Maintien de la navbar*/
+.navbar {
+    background-color:rgba(82,67,64,1);
+    color: #fff;
+    height: 85px;
+    width: 100%;
+    position: sticky;
+    z-index: 999;
+    font-family: Dehuti,sans-serif;
+}
+
+.navbar li {
+    display: inline-flex;
+    margin: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar nav {
+    transform: translate(1050px, -35px);
+}
+
+.logo {
+    font-family: 'Bloody', sans-serif;
+    font-size: 45px;
+    color: #fff;
+    transform: translate(40px, 19px);
+}
+
+/*Début de la première section de la page Discographique*/
+.albums {
+    background-image: url("images/background/1\ \(6\).png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+/*Titre Album avec les differentes plateformes*/
+.album{
+    transform: translate(455px, -63px);
+}
+.album li {
+    list-style: none ;
+    color: #FFF;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.album nav ul {
+
+    padding: 0;
+    margin: 0;
+}
+
+.album nav ul li {
+    list-style: none;
+    line-height: 44px;
+    float: left;
+
+}
+
+.album nav ul li a {
+    color: #FFF;
+    padding: 10px;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+ .album a:hover {
+    border-bottom: 3px #FFF solid;
+}
+
+.album ul li ul {
+    display: none;
+}
+
+.album ul li:hover ul {
+    z-index: 99999;
+    display: list-item;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -10px;
+}
+
+.album ul li:hover ul li {
+    float: none;
+}
+
+/*Fin*/
+
+.mojotrone {
+    transform: translateY(160px);
+}
+
+.cover {
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.tracklist {
+    font-family: Bloody, sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+
+
+
+
+
+
+/*Fin de la première section de la page Discographique*/
+
+/*Début de la deuxième section de la page Discographique*/
+.singles {
+    background-image: url("images/background/1\ \(6\).png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.items {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 1000px);
+    user-select: none;
+}
+
+.items .item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+    z-index: -1;
+    opacity: 0;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item.active {
+    opacity: 1;
+    z-index: 99;
+    box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+}
+
+.item.prev {
+    z-index: 2;
+    opacity: 0.8;
+    transform: translate(-125%, -50%);
+}
+
+.item.next {
+    z-index: 2;
+    opacity: 0.8;
+    transform: translate(25%, -50%);
+}
+
+.items .button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 275px;
+    z-index: 100;
+}
+
+.button-container .button {
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.75;
+    transition: all 300ms ease-in-out;
+}
+
+.button-container .button:hover {
+    opacity: 1;
+}
+
+.button-container .button:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 50%;
+    z-index: -99;
+}
+
+.button-container .button:nth-child(1) {
+    float: left;
+}
+
+.button-container .button:nth-child(2) {
+    float: right;
+}
+
+/*Fin de la deuxième section de la page Discographique*/
+
+/*Début de la troisième section de la page Discographique*/
+
+
+.footer {
+    background-color: #2a2a2b;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socials {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateX(-90px);
+}
+
+.social {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.copyright{
+    transform: translateX(50px);
+}
+
+/*Fin de la troisième section de la page Discographique*/
+
+
+/* Le responsive*/
